@@ -1,0 +1,19 @@
+# include<stdio.h>
+int main(){
+char s[40];
+int i=0;
+scanf("%s",s);
+printf("\"");
+while(s[i]!='\0'){
+if(s[i]! ='_'){
+printf("%c" ,s[i]);
+i++;
+}
+else{
+printf("\",\"");
+i++;
+}
+}
+printf("\"");
+return 0;
+}
